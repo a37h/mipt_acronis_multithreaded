@@ -1,12 +1,18 @@
 # Multithreaded Programming
 
+## Mutexes implementations
+
+All 10 implementations can be found in the `students` dir:
+- 2 of them are the reference ones: `pthread_mutex` and `pthread_spinlock`
+- 8 others are my descriptively named implementations all starting with `a37h_` in the dir name
+
 ## Benchmark source
 
 The benchmark was taken from [pooh64](https://github.com/pooh64) [repository](https://github.com/pooh64/dati_parpr) and slightly modified for a nicer output
 
 ## Benchmark results for my implementations
 
-By running `bash bench.sh` on my **8 core CPU** with **Ubuntu 18.04.4 LTS** installed I've got the following ouput:
+By running `bash bench.sh` on my **8 core CPU** with **Ubuntu 18.04.4 LTS** installed I've got the following output:
 
 ```
 bench/inc.c
