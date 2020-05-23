@@ -46,3 +46,15 @@ a37h_ticket_with_yield_optimized_8: 0.33; 1.24; 1.76; 1.87; 1.90; 2.14; 2.59; 2.
 pthread_mutex: 0.30; 1.32; 1.62; 1.90; 1.98; 2.20; 2.32; 2.69; 
 pthread_spinlock: 0.23; 0.86; 1.18; 1.47; 1.50; 1.58; 1.74; 2.14;
 ```
+
+## Benchmark results visualised
+
+### bench/inc.c result
+![bench_inc.c result image](bench_inc.c.png)
+
+### bench/io.c result
+![bench_io.c result image](bench_io.c.png)
+
+### bench/ring.c result
+![bench_ring.c result image](bench_ring.c.png)
+
