@@ -5,6 +5,8 @@
 
 #include <atomic>
 
+#define FAST_FORWARD_ATTEMPTS 32
+
 
 struct lock {
 	std::atomic<bool> locked;
@@ -32,7 +34,7 @@ int lock_acquire(lock_t* lk) {
 	size_t attempts = 0;
 
 	while (lk->locked.exchange(true) == true) {
-		if (attempts < 32) {
+		if (attempts < FAST_FORWARD_ATTEMPTS) {
 			attempts++;
 			continue;
 		} else {

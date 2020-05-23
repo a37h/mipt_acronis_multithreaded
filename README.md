@@ -2,9 +2,21 @@
 
 ## Mutexes implementations
 
-All 10 implementations can be found in the `students` dir:
-- 2 of them are the reference ones: `pthread_mutex` and `pthread_spinlock`
-- 8 others are my descriptively named implementations all starting with `a37h_` in the dir name
+All 10 implementations can be found in the `./students` dir.
+
+2 of them are the reference ones
+- [pthread mutex](./students/pthread_mutex/mutex.cpp)
+- [pthread spinlock](./students/pthread_spinlock/spin_lock.c)
+
+8 others are my descriptively named implementations
+- [spinlock with yield on every attempt](./students/a37h_spinlock_with_yield/a37h_mutex.cpp)
+- [spinlock with 8 attempts to fast-forward and then yield](./students/a37h_spinlock_with_yield_optimized_8/a37h_mutex.cpp)
+- [spinlock with 32 attempts to fast-forward and then yield](./students/a37h_spinlock_with_yield_optimized_32/a37h_mutex.cpp)
+- [spinlock without yield](./students/a37h_spinlock_without_yield/a37h_mutex.cpp)
+- [ticket lock with yield on every attempt](./students/a37h_ticket_with_yield/a37h_mutex.cpp)
+- [ticket lock with 8 attempts to fast-forward and then yield](./students/a37h_ticket_with_yield_optimized_8/a37h_mutex.cpp)
+- [ticket lock with 32 attempts to fast-forward and then yield](./students/a37h_ticket_with_yield_optimized_32/a37h_mutex.cpp)
+- [ticket lock without yield](./students/a37h_ticket_without_yield/a37h_mutex.cpp)
 
 ## Benchmark source
 

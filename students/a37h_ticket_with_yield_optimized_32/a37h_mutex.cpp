@@ -5,6 +5,8 @@
 
 #include <atomic>
 
+#define FAST_FORWARD_ATTEMPTS 32
+
 
 struct lock {
 	std::atomic<size_t> next_free_ticket;
@@ -36,7 +38,7 @@ int lock_acquire(lock_t* lk) {
 	size_t attempts = 0;
 	
 	while (this_thread_ticket != lk->owner_ticket.load()) {
-		if (attempts < 32) {
+		if (attempts < FAST_FORWARD_ATTEMPTS) {
 			attempts++;
 			continue;
 		} else {
