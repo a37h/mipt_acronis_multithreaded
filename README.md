@@ -49,12 +49,12 @@ pthread_spinlock: 0.23; 0.86; 1.18; 1.47; 1.50; 1.58; 1.74; 2.14;
 
 ## Benchmark results visualised
 
-### bench/inc.c result
+[Open a bench/inc.c full-sized result image](https://raw.githubusercontent.com/a37h/mipt_acronis_multithreaded/master/bench_inc.c.png)
 ![bench_inc.c result image](bench_inc.c.png)
 
-### bench/io.c result
+[Open a bench_io.c full-sized result image](https://raw.githubusercontent.com/a37h/mipt_acronis_multithreaded/master/bench_io.c.png)
 ![bench_io.c result image](bench_io.c.png)
 
-### bench/ring.c result
+[Open a bench_ring.c full-sized result image](https://raw.githubusercontent.com/a37h/mipt_acronis_multithreaded/master/bench_ring.c.png)
 ![bench_ring.c result image](bench_ring.c.png)
 
